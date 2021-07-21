@@ -1,0 +1,96 @@
+@import './components';
+@import './intro-section';
+@import './picnic-section';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    background-color: azure;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__logo {
+        max-width: 100px;
+        height: auto;
+    }
+}
+
+.intro {
+    
+    position: relative; 
+    height: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+        content: "";
+        background-image: url('../img/university.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.75;
+    }
+    
+    &__title {
+        position: relative;
+        color: #ffffff;  
+        font-size: 14rem;
+        line-height: 0.9;
+        text-align: center;
+    }
+}
+
+.section {
+    padding: 50px 0;
+
+    &__intro {
+        
+        background: linear-gradient(111deg, rgba(246, 210, 106, 1) 0%, rgba(255, 159, 0, 1) 52%, rgba(251, 197, 100, 1) 100%);
+    }
+    &__picnic {
+        background: coral;
+        position: relative;
+        height: 600px;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 58px;
+        font-weight: 600;
+        color: azure;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+
+
+.footer {
+    background: black;
+    padding: 20px 0;
+    &__text {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        color: blanchedalmond;
+    }
+}
