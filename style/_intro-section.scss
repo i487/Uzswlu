@@ -213,3 +213,37 @@
     z-index: 1;
     box-sizing: border-box;
 }
+
+
+@media only screen and (max-width: 426px) {
+    #container {
+        max-width: 375px;
+    }
+    #galleryContainer {
+        width: 374px;
+        height: 100%;
+    }
+    #galleryView {
+        height: 100%;
+        width: 375px;
+    }
+    #leftView {
+        height: 300px;
+        width: 80px;
+    }
+    #rightView {
+        height: 300px;
+        width: 80px;
+    }
+    #mainView {
+        height: 350px;
+        width: 150px;
+    }
+    .navBtns {
+        width: 40px;
+        height: 40px;
+        .fa-3x {
+            font-size: 1em;
+        }
+    }
+}
